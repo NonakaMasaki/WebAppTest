@@ -25,6 +25,7 @@
 			</form></td>
 </tr>
 </c:forEach></table><br>
+
 <a href="/RPG">トップへ</a>
 <br>
 <a href="/RPG/CharacterCreate">作成</a>

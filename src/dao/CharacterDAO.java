@@ -17,8 +17,6 @@ public class CharacterDAO {
 	private final String DB_PASS ="";
 
 
-
-
 	public List<Character>findAll(){
 		List<Character>characterList = new ArrayList<>();
 

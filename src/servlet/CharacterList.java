@@ -61,7 +61,6 @@ public class CharacterList extends HttpServlet {
 		 GetCharacterListLogic getCharacterListLogic =
 		       new GetCharacterListLogic();
 		  List<Character> CharacterList = getCharacterListLogic.execute();
-
 		 request.setAttribute("CharacterList", CharacterList);
 
 		    RequestDispatcher dispatcher = request.getRequestDispatcher(
