@@ -1,0 +1,16 @@
+ データベースのキャラクターリストをリクエストスコープにセットするやつ
+
+ インスタンス
+ GetCharacterListLogic getCharacterListLogic = new GetCharacterListLogic();
+
+ 中身はDAOのfindallでデーターベースを配列にぶちこんで戻すやつ
+ List<Character> CharacterList = getCharacterListLogic.execute();
+
+ リクエストスコープに入れる
+ request.setAttribute("CharacterList", CharacterList);
+
+ これmodelにlogic作って迂回する意味はなんなんでしょうねＤＡＯを直接使っちゃあかんのか？
+ DAOパターンらしいけど実感できん、でかいプロジェクトとかに携われたら分かるかもね
+ そもそもlogicに例外処理とか入れてないから実感できないのかも
+
+
